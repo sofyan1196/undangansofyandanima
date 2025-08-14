@@ -5,6 +5,8 @@
             .cui-comment-text img {
                 max-width: 100% !important;
             }
+            .slide-out { transform: translateY(-100%); transition: transform 1.5s ease-in-out; }
+            .fade-out { opacity: 0; transition: opacity 1.5s ease-in-out; visibility: hidden; }
         </style>
         <meta name='robots' content='noindex, nofollow'/>
         <style>
@@ -2858,19 +2860,8 @@ Kini kami menanti hari istimewa kami.								</div>
                                         }
                                         function unlockSection() {
                                             enableScrolling();
-                                            var kolom = document.getElementById("kolom");
-                                            if (kolom) {
-                                                kolom.style.cssText = "transform: translateY(-100%); transition: transform 1.5s ease-in-out;"
-                                            }
-                                            var sec = document.getElementById("sec");
-                                            if (sec) {
-                                                sec.style.cssText = "opacity: 0; transition: opacity 1.5s ease-in-out;";
-                                                setTimeout(function() {
-                                                    sec.style.visibility = "hidden"
-                                                }, 1500)
-                                            }
-                                            document.body.style.position = "";
-                                            document.body.style.overflowY = ""
+                                            document.getElementById('kolom')?.classList.add('slide-out');
+                                            document.getElementById('sec')?.classList.add('fade-out');
                                         }
                                         document.getElementById("open").onclick = function() {
                                             unlockSection();
