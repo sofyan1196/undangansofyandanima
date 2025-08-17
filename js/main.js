@@ -4,13 +4,10 @@ function lazyloadRunObserver(){const lazyloadBackgrounds=document.querySelectorA
 function setDynamicVH(){let vh=window.innerHeight*0.01;document.documentElement.style.setProperty('--vh',`${vh}px`);}
 setDynamicVH();
 window.addEventListener('resize',setDynamicVH);
-function revealElements(className){var reveals=document.querySelectorAll('.'+className);for(var i=0;i<reveals.length;i++){var windowHeight=window.innerHeight;var elementTop=reveals[i].getBoundingClientRect().top;var elementVisible=150;if(elementTop<windowHeight-elementVisible){reveals[i].classList.add('active');}else{reveals[i].classList.remove('active');}}}
-function initReveal(){revealElements('reveal');revealElements('revealin');revealElements('revealkanan');revealElements('revealkiri');revealElements('revealatas');revealElements('revealr');}
-window.addEventListener('scroll',initReveal);
+function createObserver(selector,offset){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('active');}else{entry.target.classList.remove('active');}})},{rootMargin:'0px 0px -'+offset+'px 0px'});document.querySelectorAll(selector).forEach(el=>observer.observe(el));}
+document.addEventListener('DOMContentLoaded',()=>{['.reveal','.revealin','.revealkanan','.revealkiri','.revealatas','.revealr'].forEach(cls=>createObserver(cls,150));createObserver('.ef',100);});
 const wdpAudio=document.getElementById('song');
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'){wdpAudio&&wdpAudio.play();}else{wdpAudio&&wdpAudio.pause();}});
-function reveal(){var reveals=document.querySelectorAll('.ef');for(var i=0;i<reveals.length;i++){var windowHeight=window.innerHeight;var elementTop=reveals[i].getBoundingClientRect().top;var elementVisible=100;if(elementTop<windowHeight-elementVisible){reveals[i].classList.add('active');}else{reveals[i].classList.remove('active');}}}
-window.addEventListener('scroll',reveal);
 function loadScript(src){return new Promise((resolve,reject)=>{if(document.querySelector(`script[src="${src}"]`)){resolve();return;}const s=document.createElement('script');s.src=src;s.onload=resolve;s.onerror=reject;document.body.appendChild(s);});}
 function loadCSS(href){return new Promise((resolve,reject)=>{if(document.querySelector(`link[href="${href}"]`)){resolve();return;}const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.onload=resolve;l.onerror=reject;document.head.appendChild(l);});}
 const galleryLinks=document.querySelectorAll('[data-lightbox]');if(galleryLinks.length){const handler=async e=>{if(typeof lightbox==='undefined'){e.preventDefault();await Promise.all([loadCSS('https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css'),loadScript('https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js')]);e.currentTarget.click();}};galleryLinks.forEach(el=>el.addEventListener('click',handler,{once:true}));}
