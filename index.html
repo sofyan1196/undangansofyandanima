@@ -3819,6 +3819,38 @@ Kini kami menanti hari istimewa kami.								</div>
         }
     </style>
     <script>
+function initAudioControls() {
+    const audio = document.getElementById('song');
+    const playButton = document.getElementById('mute-sound');
+    const pauseButton = document.getElementById('unmute-sound');
+
+    function updateAudioButtons() {
+        if (!audio) return;
+        if (audio.paused) {
+            playButton.style.display = 'block';
+            pauseButton.style.display = 'none';
+        } else {
+            playButton.style.display = 'none';
+            pauseButton.style.display = 'block';
+        }
+    }
+
+    if (playButton) {
+        playButton.addEventListener('click', () => audio.play());
+    }
+
+    if (pauseButton) {
+        pauseButton.addEventListener('click', () => audio.pause());
+    }
+
+    if (audio) {
+        audio.addEventListener('play', updateAudioButtons);
+        audio.addEventListener('pause', updateAudioButtons);
+    }
+
+    updateAudioButtons();
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     // ==========================================================
     // BAGIAN 1: LOGIKA KONTEN DINAMIS & NAMA TAMU
@@ -4066,83 +4098,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Panggil untuk memuat 10 ucapan pertama saat halaman dibuka
-    fetchUcapan(currentPage); 
+    fetchUcapan(currentPage);
 
-    // ==========================================================
-    // BAGIAN 3: KONTROL TOMBOL AUDIO
-    // ==========================================================
-    const audio = document.getElementById('song');
-    const playButton = document.getElementById('mute-sound');
-    const pauseButton = document.getElementById('unmute-sound');
-
-    function updateAudioButtons() {
-        if (!audio) return; // Hentikan jika elemen audio tidak ada
-        if (audio.paused) {
-            playButton.style.display = 'block';
-            pauseButton.style.display = 'none';
-        } else {
-            playButton.style.display = 'none';
-            pauseButton.style.display = 'block';
-        }
-    }
-
-    if (playButton) {
-        playButton.addEventListener('click', function() {
-            audio.play();
-        });
-    }
-    
-    if (pauseButton) {
-        pauseButton.addEventListener('click', function() {
-            audio.pause();
-        });
-    }
-
-    if (audio) {
-        audio.addEventListener('play', updateAudioButtons);
-        audio.addEventListener('pause', updateAudioButtons);
-    }
-    
-    updateAudioButtons(); // Atur kondisi awal saat halaman dimuat
-});
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const audio = document.getElementById('song');
-    const playButton = document.getElementById('mute-sound'); // Tombol play (ikon piringan)
-    const pauseButton = document.getElementById('unmute-sound'); // Tombol pause (ikon pause)
-
-    // Fungsi untuk memperbarui tampilan tombol
-    function updateAudioButtons() {
-        if (audio.paused) {
-            // Jika musik dijeda, tampilkan tombol play dan sembunyikan tombol pause
-            playButton.style.display = 'block';
-            pauseButton.style.display = 'none';
-        } else {
-            // Jika musik diputar, tampilkan tombol pause dan sembunyikan tombol play
-            playButton.style.display = 'none';
-            pauseButton.style.display = 'block';
-        }
-    }
-
-    // Event listener untuk tombol play
-    playButton.addEventListener('click', function() {
-        audio.play();
-    });
-
-    // Event listener untuk tombol pause
-    pauseButton.addEventListener('click', function() {
-        audio.pause();
-    });
-
-    // Event listener untuk audio itu sendiri, agar tombol berubah saat statusnya berganti
-    audio.addEventListener('play', updateAudioButtons);
-    audio.addEventListener('pause', updateAudioButtons);
-
-    // Atur kondisi awal saat halaman dimuat
-    // Skrip `open` Anda sudah memanggil playAudio(), jadi kita hanya perlu memastikan
-    // tombol yang benar muncul dari awal.
-    updateAudioButtons(); 
+    // Inisialisasi kontrol audio
+    initAudioControls();
 });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
