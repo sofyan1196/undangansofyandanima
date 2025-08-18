@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="id">
     <head>
         <meta charset="UTF-8">
@@ -89,144 +90,10 @@
                 ]
             }</script>
         <!-- / Yoast SEO plugin. -->
-        <link rel='dns-prefetch' href='//unpkg.com'/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
         <link rel='dns-prefetch' href='//cdnjs.cloudflare.com'/>
         <!-- <link rel="alternate" type="application/rss+xml" title="Wekita.id &raquo; Feed" href="https://inv.wekita.id/feed/"/>
         <link rel="alternate" type="application/rss+xml" title="Wekita.id &raquo; Umpan Komentar" href="https://inv.wekita.id/comments/feed/"/>
         <link rel="alternate" type="application/rss+xml" title="Wekita.id &raquo; Undangan Pernikahan Sofyan Dan Ima Umpan Komentar" href="https://inv.wekita.id/spesial-01/feed/"/> -->
-        <script>
-            window._wpemojiSettings = {
-                "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/",
-                "ext": ".png",
-                "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/",
-                "svgExt": ".svg",
-                "source": {
-                    "concatemoji": "https:\/\/inv.wekita.id\/wp-includes\/js\/wp-emoji-release.min.js?ver=da71a026377a5d550785172edb2830e0"
-                }
-            };
-            /*! This file is auto-generated */
-            !function(s, n) {
-                var o, i, e;
-                function c(e) {
-                    try {
-                        var t = {
-                            supportTests: e,
-                            timestamp: (new Date).valueOf()
-                        };
-                        sessionStorage.setItem(o, JSON.stringify(t))
-                    } catch (e) {}
-                }
-                function p(e, t, n) {
-                    e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-                    e.fillText(t, 0, 0);
-                    var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)
-                      , a = (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-                    e.fillText(n, 0, 0),
-                    new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
-                    return t.every(function(e, t) {
-                        return e === a[t]
-                    })
-                }
-                function u(e, t) {
-                    e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-                    e.fillText(t, 0, 0);
-                    for (var n = e.getImageData(16, 16, 1, 1), a = 0; a < n.data.length; a++)
-                        if (0 !== n.data[a])
-                            return !1;
-                    return !0
-                }
-                function f(e, t, n, a) {
-                    switch (t) {
-                    case "flag":
-                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
-                    case "emoji":
-                        return !a(e, "\ud83e\udedf")
-                    }
-                    return !1
-                }
-                function g(e, t, n, a) {
-                    var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300,150) : s.createElement("canvas")
-                      , o = r.getContext("2d", {
-                        willReadFrequently: !0
-                    })
-                      , i = (o.textBaseline = "top",
-                    o.font = "600 32px Arial",
-                    {});
-                    return e.forEach(function(e) {
-                        i[e] = t(o, e, n, a)
-                    }),
-                    i
-                }
-                function t(e) {
-                    var t = s.createElement("script");
-                    t.src = e,
-                    t.defer = !0,
-                    s.head.appendChild(t)
-                }
-                "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports",
-                i = ["flag", "emoji"],
-                n.supports = {
-                    everything: !0,
-                    everythingExceptFlag: !0
-                },
-                e = new Promise(function(e) {
-                    s.addEventListener("DOMContentLoaded", e, {
-                        once: !0
-                    })
-                }
-                ),
-                new Promise(function(t) {
-                    var n = function() {
-                        try {
-                            var e = JSON.parse(sessionStorage.getItem(o));
-                            if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests)
-                                return e.supportTests
-                        } catch (e) {}
-                        return null
-                    }();
-                    if (!n) {
-                        if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob)
-                            try {
-                                var e = "postMessage(" + g.toString() + "(" + [JSON.stringify(i), f.toString(), p.toString(), u.toString()].join(",") + "));"
-                                  , a = new Blob([e],{
-                                    type: "text/javascript"
-                                })
-                                  , r = new Worker(URL.createObjectURL(a),{
-                                    name: "wpTestEmojiSupports"
-                                });
-                                return void (r.onmessage = function(e) {
-                                    c(n = e.data),
-                                    r.terminate(),
-                                    t(n)
-                                }
-                                )
-                            } catch (e) {}
-                        c(n = g(i, f, p, u))
-                    }
-                    t(n)
-                }
-                ).then(function(e) {
-                    for (var t in e)
-                        n.supports[t] = e[t],
-                        n.supports.everything = n.supports.everything && n.supports[t],
-                        "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
-                    n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag,
-                    n.DOMReady = !1,
-                    n.readyCallback = function() {
-                        n.DOMReady = !0
-                    }
-                }).then(function() {
-                    return e
-                }).then(function() {
-                    var e;
-                    n.supports.everything || (n.readyCallback(),
-                    (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji),
-                    t(e.wpemoji)))
-                }))
-            }((window,
-            document), window._wpemojiSettings);
-        </script>
         <link rel='stylesheet' id='bdt-uikit-css' href='css/bdt-uikit.css?ver=3.15.1' media='all'/>
         <link rel='stylesheet' id='ep-helper-css' href='css/ep-helper.css?ver=3.1.12' media='all'/>
         <style id='wp-emoji-styles-inline-css'>
@@ -780,9 +647,13 @@
         <link rel='stylesheet' id='elementor-icons-fa-regular-css' href='css/regular.min.css?ver=5.15.3' media='all'/>
         <link rel='stylesheet' id='elementor-icons-fa-brands-css' href='css/brands.min.css?ver=5.15.3' media='all'/>
         <link rel='stylesheet' id='elementor-icons-fa-solid-css' href='css/solid.min.css?ver=5.15.3' media='all'/>
+
         <script src="js/vendor.bundle.min.js" defer></script>
+
+        <script src="js/vendor.bundle.min.js" id="vendor-bundle-js" defer></script>
+
         <meta name="generator" content="Elementor 3.28.4; features: additional_custom_breakpoints, e_local_google_fonts; settings: css_print_method-external, google_font-enabled, font_display-swap">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="css/aos.css?v=2.3.1" rel="stylesheet">
         <style>
             .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload), .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
                 background-image: none !important;
@@ -868,17 +739,17 @@
                             <div class="e-con-inner">
                                 <div class="elementor-element elementor-element-3ebcf387 elementor-absolute elementor-widget__width-inherit fld elementor-widget elementor-widget-image" data-id="3ebcf387" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
-                                        <img fetchpriority="high" decoding="async" width="735" height="472" src="img/TEMA-01-BUNGA-02-CO-e1721803686726-1.webp" class="attachment-full size-full wp-image-7527" alt="" srcset="img/TEMA-01-BUNGA-02-CO-e1721803686726-1.webp 735w, img/TEMA-01-BUNGA-02-CO-e1721803686726-1-300x193.webp 300w" sizes="(max-width: 735px) 100vw, 735px"/>
+                                        <img fetchpriority="high" decoding="async" width="735" height="472" src="img/TEMA-01-BUNGA-02-CO-e1721803686726-1.webp" class="attachment-full size-full wp-image-7527" alt="" srcset="img/TEMA-01-BUNGA-02-CO-e1721803686726-1.webp 735w, img/TEMA-01-BUNGA-02-CO-e1721803686726-1-300x193.webp 300w" sizes="(max-width: 735px) 100vw, 735px" role="presentation"/>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-3ae6db81 elementor-absolute elementor-widget__width-inherit fla elementor-widget elementor-widget-image" data-id="3ae6db81" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
-                                        <img decoding="async" width="593" height="536" src="img/TEMA-01-BUNGA-03-CO-e1721803728780-1.webp" class="attachment-full size-full wp-image-7528" alt="" srcset="img/TEMA-01-BUNGA-03-CO-e1721803728780-1.webp 593w, img/TEMA-01-BUNGA-03-CO-e1721803728780-1-300x271.webp 300w" sizes="(max-width: 593px) 100vw, 593px"/>
+                                        <img decoding="async" width="593" height="536" src="img/TEMA-01-BUNGA-03-CO-e1721803728780-1.webp" class="attachment-full size-full wp-image-7528" alt="" srcset="img/TEMA-01-BUNGA-03-CO-e1721803728780-1.webp 593w, img/TEMA-01-BUNGA-03-CO-e1721803728780-1-300x271.webp 300w" sizes="(max-width: 593px) 100vw, 593px" role="presentation"/>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-574367b1 elementor-absolute elementor-widget__width-inherit pluse elementor-widget elementor-widget-image" data-id="574367b1" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
-                                        <img decoding="async" width="538" height="483" src="img/TEMA-01-BUNGA-01-co-2-e1721803892640-1.webp" class="attachment-full size-full wp-image-7529" alt="" srcset="img/TEMA-01-BUNGA-01-co-2-e1721803892640-1.webp 538w, img/TEMA-01-BUNGA-01-co-2-e1721803892640-1-300x269.webp 300w" sizes="(max-width: 538px) 100vw, 538px"/>
+                                        <img decoding="async" width="538" height="483" src="img/TEMA-01-BUNGA-01-co-2-e1721803892640-1.webp" class="attachment-full size-full wp-image-7529" alt="" srcset="img/TEMA-01-BUNGA-01-co-2-e1721803892640-1.webp 538w, img/TEMA-01-BUNGA-01-co-2-e1721803892640-1-300x269.webp 300w" sizes="(max-width: 538px) 100vw, 538px" role="presentation"/>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-40ee17e5 hide elementor-widget elementor-widget-html" data-id="40ee17e5" data-element_type="widget" data-widget_type="html.default">
@@ -1046,27 +917,27 @@
                                 </div>
                                 <div class="elementor-element elementor-element-273d9d6a elementor-absolute elementor-widget__width-inherit pluse e-transform elementor-widget elementor-widget-image" data-id="273d9d6a" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
-                                        <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px"/>
+                                        <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px" role="presentation"/>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-465f9735 elementor-absolute elementor-widget__width-inherit flc e-transform elementor-widget elementor-widget-image" data-id="465f9735" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
-                                        <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px"/>
+                                        <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px" role="presentation"/>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-309f4aa3 elementor-absolute elementor-widget__width-inherit fld e-transform elementor-widget elementor-widget-image" data-id="309f4aa3" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
-                                        <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px"/>
+                                        <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px" role="presentation"/>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-7745cab9 elementor-absolute elementor-widget__width-inherit fla e-transform elementor-widget elementor-widget-image" data-id="7745cab9" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
-                                        <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px"/>
+                                        <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px" role="presentation"/>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-6bc6b11b elementor-absolute elementor-widget__width-inherit pluse2 e-transform elementor-widget elementor-widget-image" data-id="6bc6b11b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
-                                        <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px"/>
+                                        <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px" role="presentation"/>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-56fd9a0a elementor-widget elementor-widget-text-editor" data-id="56fd9a0a" data-element_type="widget" data-aos="zoom-out-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="text-editor.default">
@@ -1104,12 +975,12 @@
                             </div>
                             <div class="elementor-element elementor-element-43f247ed elementor-absolute pluse1 elementor-widget elementor-widget-image" data-id="43f247ed" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="fade-up" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
-                                    <img loading="lazy" decoding="async" width="723" height="509" src="img/TEMA-01-BUNGA-01-bawah-e1721804781634-1.webp" class="attachment-full size-full wp-image-7535" alt="" srcset="img/TEMA-01-BUNGA-01-bawah-e1721804781634-1.webp 723w, img/TEMA-01-BUNGA-01-bawah-e1721804781634-1-300x211.webp 300w" sizes="(max-width: 723px) 100vw, 723px"/>
+                                    <img loading="lazy" decoding="async" width="723" height="509" src="img/TEMA-01-BUNGA-01-bawah-e1721804781634-1.webp" class="attachment-full size-full wp-image-7535" alt="" srcset="img/TEMA-01-BUNGA-01-bawah-e1721804781634-1.webp 723w, img/TEMA-01-BUNGA-01-bawah-e1721804781634-1-300x211.webp 300w" sizes="(max-width: 723px) 100vw, 723px" role="presentation"/>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-7bda3342 elementor-absolute flc1 elementor-widget elementor-widget-image" data-id="7bda3342" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="fade-up" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
-                                    <img loading="lazy" decoding="async" width="377" height="519" src="img/TEMA-01-BUNGA-02bawah-e1721804937768-1.webp" class="attachment-full size-full wp-image-7536" alt="" srcset="img/TEMA-01-BUNGA-02bawah-e1721804937768-1.webp 377w, img/TEMA-01-BUNGA-02bawah-e1721804937768-1-218x300.webp 218w" sizes="(max-width: 377px) 100vw, 377px"/>
+                                    <img loading="lazy" decoding="async" width="377" height="519" src="img/TEMA-01-BUNGA-02bawah-e1721804937768-1.webp" class="attachment-full size-full wp-image-7536" alt="" srcset="img/TEMA-01-BUNGA-02bawah-e1721804937768-1.webp 377w, img/TEMA-01-BUNGA-02bawah-e1721804937768-1-218x300.webp 218w" sizes="(max-width: 377px) 100vw, 377px" role="presentation"/>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-6a68094f hide elementor-widget elementor-widget-html" data-id="6a68094f" data-element_type="widget" data-widget_type="html.default">
@@ -1773,17 +1644,17 @@
                         <div class="elementor-element elementor-element-34f3a4f2 e-con-full e-flex e-con e-child" data-id="34f3a4f2" data-element_type="container">
                             <div class="elementor-element elementor-element-3ce59b60 elementor-absolute elementor-widget__width-inherit wayanGR elementor-widget elementor-widget-image" data-id="3ce59b60" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
-                                    <img loading="lazy" decoding="async" width="893" height="1022" src="img/bunga-akhir-tema-01-new-1-1.webp" class="attachment-full size-full wp-image-7537" alt="" srcset="img/bunga-akhir-tema-01-new-1-1.webp 893w, img/bunga-akhir-tema-01-new-1-1-262x300.webp 262w, img/bunga-akhir-tema-01-new-1-1-768x879.webp 768w" sizes="(max-width: 893px) 100vw, 893px"/>
+                                    <img loading="lazy" decoding="async" width="893" height="1022" src="img/bunga-akhir-tema-01-new-1-1.webp" class="attachment-full size-full wp-image-7537" alt="" srcset="img/bunga-akhir-tema-01-new-1-1.webp 893w, img/bunga-akhir-tema-01-new-1-1-262x300.webp 262w, img/bunga-akhir-tema-01-new-1-1-768x879.webp 768w" sizes="(max-width: 893px) 100vw, 893px" role="presentation"/>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-55db5691 elementor-absolute fla1 elementor-widget elementor-widget-image" data-id="55db5691" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
-                                    <img loading="lazy" decoding="async" width="740" height="1017" src="img/bunga-akhir-tema-01-new-1-1-1-1-1.webp" class="attachment-full size-full wp-image-7538" alt="" srcset="img/bunga-akhir-tema-01-new-1-1-1-1-1.webp 740w, img/bunga-akhir-tema-01-new-1-1-1-1-1-218x300.webp 218w" sizes="(max-width: 740px) 100vw, 740px"/>
+                                    <img loading="lazy" decoding="async" width="740" height="1017" src="img/bunga-akhir-tema-01-new-1-1-1-1-1.webp" class="attachment-full size-full wp-image-7538" alt="" srcset="img/bunga-akhir-tema-01-new-1-1-1-1-1.webp 740w, img/bunga-akhir-tema-01-new-1-1-1-1-1-218x300.webp 218w" sizes="(max-width: 740px) 100vw, 740px" role="presentation"/>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-3319893b elementor-absolute elementor-widget elementor-widget-image" data-id="3319893b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
-                                    <img loading="lazy" decoding="async" width="1318" height="1208" src="img/TEMA-01-BUNGA-01-co-1.png" class="attachment-full size-full wp-image-7539" alt="" srcset="img/TEMA-01-BUNGA-01-co-1.png 1318w, img/TEMA-01-BUNGA-01-co-1-300x275.png 300w, img/TEMA-01-BUNGA-01-co-1-1024x939.png 1024w, img/TEMA-01-BUNGA-01-co-1-768x704.png 768w" sizes="(max-width: 1318px) 100vw, 1318px"/>
+                                    <img loading="lazy" decoding="async" width="1318" height="1208" src="img/TEMA-01-BUNGA-01-co-1.png" class="attachment-full size-full wp-image-7539" alt="" srcset="img/TEMA-01-BUNGA-01-co-1.png 1318w, img/TEMA-01-BUNGA-01-co-1-300x275.png 300w, img/TEMA-01-BUNGA-01-co-1-1024x939.png 1024w, img/TEMA-01-BUNGA-01-co-1-768x704.png 768w" sizes="(max-width: 1318px) 100vw, 1318px" role="presentation"/>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-26cc64ba e-con-full e-flex e-con e-child" data-id="26cc64ba" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -1939,27 +1810,27 @@
                         </div>
                         <div class="elementor-element elementor-element-2d82c5b3 elementor-absolute elementor-widget__width-inherit pluse e-transform elementor-widget elementor-widget-image" data-id="2d82c5b3" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px"/>
+                                <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-449f548e elementor-absolute elementor-widget__width-inherit flc e-transform elementor-widget elementor-widget-image" data-id="449f548e" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px"/>
+                                <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-635b3a7 elementor-absolute elementor-widget__width-inherit fld e-transform elementor-widget elementor-widget-image" data-id="635b3a7" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px"/>
+                                <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-8c92912 elementor-absolute elementor-widget__width-inherit fla e-transform elementor-widget elementor-widget-image" data-id="8c92912" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px"/>
+                                <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-34d5a152 elementor-absolute elementor-widget__width-inherit pluse2 e-transform elementor-widget elementor-widget-image" data-id="34d5a152" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px"/>
+                                <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-3313139c elementor-widget elementor-widget-spacer" data-id="3313139c" data-element_type="widget" data-widget_type="spacer.default">
@@ -1971,27 +1842,27 @@
                         </div>
                         <div class="elementor-element elementor-element-17fe4da7 elementor-absolute elementor-widget__width-inherit pluse elementor-widget elementor-widget-image" data-id="17fe4da7" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px"/>
+                                <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-5a325632 elementor-absolute elementor-widget__width-inherit flc elementor-widget elementor-widget-image" data-id="5a325632" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px"/>
+                                <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-220984b3 elementor-absolute elementor-widget__width-inherit fld elementor-widget elementor-widget-image" data-id="220984b3" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px"/>
+                                <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-63464025 elementor-absolute elementor-widget__width-inherit fla elementor-widget elementor-widget-image" data-id="63464025" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px"/>
+                                <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-d954637 elementor-absolute elementor-widget__width-inherit pluse2 elementor-widget elementor-widget-image" data-id="d954637" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px"/>
+                                <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px" role="presentation"/>
                             </div>
                         </div>
                     </div>
@@ -2009,7 +1880,7 @@
                         </div>
                         <div class="elementor-element elementor-element-2f001547 revealin elementor-widget elementor-widget-image" data-id="2f001547" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="73" height="11" src="img/bismillah-4-1.svg" class="attachment-large size-large wp-image-7540" alt=""/>
+                                <img loading="lazy" decoding="async" width="73" height="11" src="img/bismillah-4-1.svg" class="attachment-large size-large wp-image-7540" alt="Bismillah calligraphy"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-f313777 reveal elementor-widget elementor-widget-heading" data-id="f313777" data-element_type="widget" data-widget_type="heading.default">
@@ -2223,27 +2094,27 @@ agar kamu mengingat (kebesaran Allah).“<br>
                         </div>
                         <div class="elementor-element elementor-element-552d2ae0 elementor-absolute elementor-widget__width-inherit pluse e-transform elementor-widget elementor-widget-image" data-id="552d2ae0" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px"/>
+                                <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-5de1dd45 elementor-absolute elementor-widget__width-inherit flc e-transform elementor-widget elementor-widget-image" data-id="5de1dd45" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px"/>
+                                <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-7eb94557 elementor-absolute elementor-widget__width-inherit fld e-transform elementor-widget elementor-widget-image" data-id="7eb94557" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px"/>
+                                <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-13deaf2b elementor-absolute elementor-widget__width-inherit fla e-transform elementor-widget elementor-widget-image" data-id="13deaf2b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px"/>
+                                <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-1e9a56d5 elementor-absolute elementor-widget__width-inherit pluse2 e-transform elementor-widget elementor-widget-image" data-id="1e9a56d5" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px"/>
+                                <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-16f57ac5 elementor-widget elementor-widget-spacer" data-id="16f57ac5" data-element_type="widget" data-widget_type="spacer.default">
@@ -2255,27 +2126,27 @@ agar kamu mengingat (kebesaran Allah).“<br>
                         </div>
                         <div class="elementor-element elementor-element-6f262ff2 elementor-absolute elementor-widget__width-inherit pluse e-transform e-transform elementor-widget elementor-widget-image" data-id="6f262ff2" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px"/>
+                                <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-5ffa59cb elementor-absolute elementor-widget__width-inherit flc e-transform e-transform elementor-widget elementor-widget-image" data-id="5ffa59cb" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px"/>
+                                <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-11809594 elementor-absolute elementor-widget__width-inherit fld e-transform e-transform elementor-widget elementor-widget-image" data-id="11809594" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px"/>
+                                <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-1dd4b993 elementor-absolute elementor-widget__width-inherit fla e-transform e-transform elementor-widget elementor-widget-image" data-id="1dd4b993" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px"/>
+                                <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-4066ce13 elementor-absolute elementor-widget__width-inherit pluse2 e-transform e-transform elementor-widget elementor-widget-image" data-id="4066ce13" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px"/>
+                                <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px" role="presentation"/>
                             </div>
                         </div>
                     </div>
@@ -2337,7 +2208,7 @@ agar kamu mengingat (kebesaran Allah).“<br>
     
                             <!-- Kartu BCA -->
                             <div class="gift-card">
-                                <img src="img/BCA_logo_Bank_Central_Asia-1-3-2048x650-1-1.png" alt="Logo BCA" class="bank-logo">
+                                <img src="img/BCA_logo_Bank_Central_Asia-1-3-2048x650-1-1.png" alt="Logo BCA" class="bank-logo" loading="lazy">
                                 <p class="account-number" id="bca-number">147 058 9392</p>
                                 <p class="account-name">a.n. Sofyan Hadi</p>
                                 <button class="copy-button" onclick="copyToClipboard('bca-number', this)">
@@ -2347,7 +2218,7 @@ agar kamu mengingat (kebesaran Allah).“<br>
 
                             <!-- Kartu DANA -->
                             <div class="gift-card">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/BRI_2020.svg" alt="Logo BRI" class="bank-logo">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/BRI_2020.svg" alt="Logo BRI" class="bank-logo" loading="lazy">
                                 <p class="account-number" id="dana-number">6231 0104 9690 534</p>
                                 <p class="account-name">a.n. Sofyan Hadi</p>
                                 <button class="copy-button" onclick="copyToClipboard('dana-number', this)">
@@ -2443,27 +2314,27 @@ Kini kami menanti hari istimewa kami.								</div>
     
                                 <!-- Gambar 1 -->
                                 <a href="img/5.jpg" data-lightbox="wedding-gallery" data-title="Momen Bahagia 1" class="gallery-item">
-                                    <img src="img/5.jpg" alt="Foto Pernikahan 1" class="gallery-image">
+                                    <img src="img/5.jpg" alt="Foto Pernikahan 1" class="gallery-image" loading="lazy">
                                 </a>
                                 
                                 <!-- Gambar 2 -->
                                 <a href="img/6.jpg" data-lightbox="wedding-gallery" data-title="Momen Bahagia 2" class="gallery-item">
-                                    <img src="img/6.jpg" alt="Foto Pernikahan 2" class="gallery-image">
+                                    <img src="img/6.jpg" alt="Foto Pernikahan 2" class="gallery-image" loading="lazy">
                                 </a>
 
                                 <!-- Gambar 3 -->
                                 <a href="img/7.jpg" data-lightbox="wedding-gallery" data-title="Momen Bahagia 3" class="gallery-item">
-                                    <img src="img/7.jpg" alt="Foto Pernikahan 3" class="gallery-image">
+                                    <img src="img/7.jpg" alt="Foto Pernikahan 3" class="gallery-image" loading="lazy">
                                 </a>
 
                                 <!-- Gambar 4 -->
                                 <a href="img/8.jpg" data-lightbox="wedding-gallery" data-title="Calon Mempelai Pria" class="gallery-item">
-                                    <img src="img/8.jpg" alt="Foto Pria" class="gallery-image">
+                                    <img src="img/8.jpg" alt="Foto Pria" class="gallery-image" loading="lazy">
                                 </a>
 
                                 <!-- Gambar 5 -->
                                 <a href="img/10.jpg" data-lightbox="wedding-gallery" data-title="Calon Mempelai Wanita" class="gallery-item">
-                                    <img src="img/10.jpg" alt="Foto Wanita" class="gallery-image">
+                                    <img src="img/10.jpg" alt="Foto Wanita" class="gallery-image" loading="lazy">
                                 </a>
 
                                 <!-- Tambahkan gambar lain di sini jika perlu -->
@@ -2472,52 +2343,52 @@ Kini kami menanti hari istimewa kami.								</div>
                         </div>
                         <div class="elementor-element elementor-element-c7cc9e8 elementor-absolute elementor-widget__width-inherit pluse e-transform elementor-widget elementor-widget-image" data-id="c7cc9e8" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px"/>
+                                <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-33ae7254 elementor-absolute elementor-widget__width-inherit flc e-transform elementor-widget elementor-widget-image" data-id="33ae7254" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px"/>
+                                <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-637da8c0 elementor-absolute elementor-widget__width-inherit fld e-transform elementor-widget elementor-widget-image" data-id="637da8c0" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px"/>
+                                <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-27eaa29a elementor-absolute elementor-widget__width-inherit fla e-transform elementor-widget elementor-widget-image" data-id="27eaa29a" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px"/>
+                                <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-3669463d elementor-absolute elementor-widget__width-inherit pluse2 e-transform elementor-widget elementor-widget-image" data-id="3669463d" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px"/>
+                                <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-2e3781a5 elementor-absolute elementor-widget__width-inherit pluse elementor-widget elementor-widget-image" data-id="2e3781a5" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px"/>
+                                <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-1063d92f elementor-absolute elementor-widget__width-inherit flc elementor-widget elementor-widget-image" data-id="1063d92f" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px"/>
+                                <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-34a0329 elementor-absolute elementor-widget__width-inherit fld elementor-widget elementor-widget-image" data-id="34a0329" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px"/>
+                                <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-44b21a45 elementor-absolute elementor-widget__width-inherit fla elementor-widget elementor-widget-image" data-id="44b21a45" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px"/>
+                                <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-289228d6 elementor-absolute elementor-widget__width-inherit pluse2 elementor-widget elementor-widget-image" data-id="289228d6" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px"/>
+                                <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px" role="presentation"/>
                             </div>
                         </div>
                     </div>
@@ -2690,17 +2561,17 @@ Kini kami menanti hari istimewa kami.								</div>
                         <div class="elementor-element elementor-element-c01326c e-con-full e-flex e-con e-child" data-id="c01326c" data-element_type="container">
                             <div class="elementor-element elementor-element-28228ea1 elementor-absolute elementor-widget__width-inherit wayanGR elementor-widget elementor-widget-image" data-id="28228ea1" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
-                                    <img loading="lazy" decoding="async" width="893" height="1022" src="img/bunga-akhir-tema-01-new-1-1.webp" class="attachment-full size-full wp-image-7537" alt="" srcset="img/bunga-akhir-tema-01-new-1-1.webp 893w, img/bunga-akhir-tema-01-new-1-1-262x300.webp 262w, img/bunga-akhir-tema-01-new-1-1-768x879.webp 768w" sizes="(max-width: 893px) 100vw, 893px"/>
+                                    <img loading="lazy" decoding="async" width="893" height="1022" src="img/bunga-akhir-tema-01-new-1-1.webp" class="attachment-full size-full wp-image-7537" alt="" srcset="img/bunga-akhir-tema-01-new-1-1.webp 893w, img/bunga-akhir-tema-01-new-1-1-262x300.webp 262w, img/bunga-akhir-tema-01-new-1-1-768x879.webp 768w" sizes="(max-width: 893px) 100vw, 893px" role="presentation"/>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-5cc496c0 elementor-absolute fla1 elementor-widget elementor-widget-image" data-id="5cc496c0" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
-                                    <img loading="lazy" decoding="async" width="740" height="1017" src="img/bunga-akhir-tema-01-new-1-1-1-1-1.webp" class="attachment-full size-full wp-image-7538" alt="" srcset="img/bunga-akhir-tema-01-new-1-1-1-1-1.webp 740w, img/bunga-akhir-tema-01-new-1-1-1-1-1-218x300.webp 218w" sizes="(max-width: 740px) 100vw, 740px"/>
+                                    <img loading="lazy" decoding="async" width="740" height="1017" src="img/bunga-akhir-tema-01-new-1-1-1-1-1.webp" class="attachment-full size-full wp-image-7538" alt="" srcset="img/bunga-akhir-tema-01-new-1-1-1-1-1.webp 740w, img/bunga-akhir-tema-01-new-1-1-1-1-1-218x300.webp 218w" sizes="(max-width: 740px) 100vw, 740px" role="presentation"/>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-1fe4d561 elementor-absolute elementor-widget elementor-widget-image" data-id="1fe4d561" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
-                                    <img loading="lazy" decoding="async" width="1318" height="1208" src="img/TEMA-01-BUNGA-01-co-1.png" class="attachment-full size-full wp-image-7539" alt="" srcset="img/TEMA-01-BUNGA-01-co-1.png 1318w, img/TEMA-01-BUNGA-01-co-1-300x275.png 300w, img/TEMA-01-BUNGA-01-co-1-1024x939.png 1024w, img/TEMA-01-BUNGA-01-co-1-768x704.png 768w" sizes="(max-width: 1318px) 100vw, 1318px"/>
+                                    <img loading="lazy" decoding="async" width="1318" height="1208" src="img/TEMA-01-BUNGA-01-co-1.png" class="attachment-full size-full wp-image-7539" alt="" srcset="img/TEMA-01-BUNGA-01-co-1.png 1318w, img/TEMA-01-BUNGA-01-co-1-300x275.png 300w, img/TEMA-01-BUNGA-01-co-1-1024x939.png 1024w, img/TEMA-01-BUNGA-01-co-1-768x704.png 768w" sizes="(max-width: 1318px) 100vw, 1318px" role="presentation"/>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-154fa53c e-con-full e-flex e-con e-child" data-id="154fa53c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10">
@@ -2730,27 +2601,27 @@ Kini kami menanti hari istimewa kami.								</div>
                         </div>
                         <div class="elementor-element elementor-element-2cdd11ac elementor-absolute elementor-widget__width-inherit pluse e-transform elementor-widget elementor-widget-image" data-id="2cdd11ac" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px"/>
+                                <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-7a8ad802 elementor-absolute elementor-widget__width-inherit flc e-transform elementor-widget elementor-widget-image" data-id="7a8ad802" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px"/>
+                                <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-99b2227 elementor-absolute elementor-widget__width-inherit fld e-transform elementor-widget elementor-widget-image" data-id="99b2227" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px"/>
+                                <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-7a0fddce elementor-absolute elementor-widget__width-inherit fla e-transform elementor-widget elementor-widget-image" data-id="7a0fddce" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px"/>
+                                <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-5a139967 elementor-absolute elementor-widget__width-inherit pluse2 e-transform elementor-widget elementor-widget-image" data-id="5a139967" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-right" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px"/>
+                                <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-2d50ca95 elementor-widget elementor-widget-spacer" data-id="2d50ca95" data-element_type="widget" data-widget_type="spacer.default">
@@ -2762,27 +2633,27 @@ Kini kami menanti hari istimewa kami.								</div>
                         </div>
                         <div class="elementor-element elementor-element-401ca613 elementor-absolute elementor-widget__width-inherit pluse e-transform e-transform elementor-widget elementor-widget-image" data-id="401ca613" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px"/>
+                                <img loading="lazy" decoding="async" width="564" height="552" src="img/TEMA-01-BUNGA-05-e1721804339713-1.webp" class="attachment-full size-full wp-image-7530" alt="" srcset="img/TEMA-01-BUNGA-05-e1721804339713-1.webp 564w, img/TEMA-01-BUNGA-05-e1721804339713-1-300x294.webp 300w" sizes="(max-width: 564px) 100vw, 564px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-46558929 elementor-absolute elementor-widget__width-inherit flc e-transform e-transform elementor-widget elementor-widget-image" data-id="46558929" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px"/>
+                                <img loading="lazy" decoding="async" width="414" height="605" src="img/TEMA-01-BUNGA-04-e1721804205400-1.webp" class="attachment-full size-full wp-image-7531" alt="" srcset="img/TEMA-01-BUNGA-04-e1721804205400-1.webp 414w, img/TEMA-01-BUNGA-04-e1721804205400-1-205x300.webp 205w" sizes="(max-width: 414px) 100vw, 414px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-c1bce8c elementor-absolute elementor-widget__width-inherit fld e-transform e-transform elementor-widget elementor-widget-image" data-id="c1bce8c" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px"/>
+                                <img loading="lazy" decoding="async" width="685" height="470" src="img/TEMA-01-BUNGA-02-e1721804129842-1.webp" class="attachment-full size-full wp-image-7532" alt="" srcset="img/TEMA-01-BUNGA-02-e1721804129842-1.webp 685w, img/TEMA-01-BUNGA-02-e1721804129842-1-300x206.webp 300w" sizes="(max-width: 685px) 100vw, 685px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-1f5d86e6 elementor-absolute elementor-widget__width-inherit fla e-transform e-transform elementor-widget elementor-widget-image" data-id="1f5d86e6" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px"/>
+                                <img loading="lazy" decoding="async" width="550" height="584" src="img/TEMA-01-BUNGA-03-e1721804270463-1.webp" class="attachment-full size-full wp-image-7533" alt="" srcset="img/TEMA-01-BUNGA-03-e1721804270463-1.webp 550w, img/TEMA-01-BUNGA-03-e1721804270463-1-283x300.webp 283w" sizes="(max-width: 550px) 100vw, 550px" role="presentation"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-72034d6f elementor-absolute elementor-widget__width-inherit pluse2 e-transform e-transform elementor-widget elementor-widget-image" data-id="72034d6f" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500" data-aos-easing="lease-in-cube" data-aos-offset="10" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px"/>
+                                <img loading="lazy" decoding="async" width="542" height="516" src="img/TEMA-01-BUNGA-01-e1721804047720-1.webp" class="attachment-full size-full wp-image-7534" alt="" srcset="img/TEMA-01-BUNGA-01-e1721804047720-1.webp 542w, img/TEMA-01-BUNGA-01-e1721804047720-1-300x286.webp 300w" sizes="(max-width: 542px) 100vw, 542px" role="presentation"/>
                             </div>
                         </div>
                     </div>
@@ -2795,7 +2666,7 @@ Kini kami menanti hari istimewa kami.								</div>
                             <div class="elementor-element elementor-element-a267afc elementor-widget elementor-widget-text-editor" data-id="a267afc" data-element_type="widget" data-widget_type="text-editor.default">
                                 <div class="elementor-widget-container">
                                     <p>
-                                        <img decoding="async" class="emoji" role="img" draggable="false" src="https://s.w.org/images/core/emoji/13.0.1/svg/2764.svg" alt="❤"/>
+                                        <img decoding="async" class="emoji" role="img" draggable="false" src="https://s.w.org/images/core/emoji/13.0.1/svg/2764.svg" alt="❤" loading="lazy"/>
                                     </p>
                                 </div>
                             </div>
@@ -2904,6 +2775,7 @@ Kini kami menanti hari istimewa kami.								</div>
         </div>
         
     
+
     <script>
         const lazyloadRunObserver = () => {
             const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
@@ -2934,6 +2806,10 @@ Kini kami menanti hari istimewa kami.								</div>
         }
         );
     </script>
+
+    <script src="js/wdp-swiper.min.js" id="wdp-swiper-js-js" defer></script>
+    <script src="js/exad-scripts.min.js?ver=3.1.12" id="exad-main-script-js" defer></script>
+
     <script id="cui_js_script-js-extra">
         var CUI_WP = {
             "ajaxurl": "https:\/\/inv.wekita.id\/wp-admin\/admin-ajax.php",
@@ -2962,6 +2838,7 @@ Kini kami menanti hari istimewa kami.								</div>
     </script>
     <script src="js/hello-frontend.js?ver=3.4.4" id="hello-theme-frontend-js" defer></script>
     <script src="js/lottie.min.js?ver=5.6.6" id="lottie-js" defer></script>
+
     <script src="js/swiper.min.js?ver=8.4.5" id="swiper-js" defer></script>
     <script src="js/jquery.sticky.min.js?ver=3.28.3" id="e-sticky-js" defer></script>
     <!-- <script id="elementor-pro-frontend-js-before">
@@ -3069,7 +2946,6 @@ Kini kami menanti hari istimewa kami.								</div>
         });
     </script>
     <script src="js/core.min.js?ver=1.13.3" id="jquery-ui-core-js" defer></script>
-    
     <script src="js/frontend.min.js?ver=3.28.4" id="elementor-frontend-js" defer></script>
     <script src="js/bdt-uikit.js?ver=3.15.1" id="bdt-uikit-js" defer></script>
     <style>
@@ -3087,38 +2963,6 @@ Kini kami menanti hari istimewa kami.								</div>
             margin: 10px 0px 0px 0px!important;
         }
     </style>
-    <script>
-        function setDynamicVH() {
-            let vh = window.innerHeight * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh}px`)
-        }
-        setDynamicVH();
-        window.addEventListener('resize', setDynamicVH);
-    </script>
-    <script>
-        function revealElements(className) {
-            var reveals = document.querySelectorAll("." + className);
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active")
-                } else {
-                    reveals[i].classList.remove("active")
-                }
-            }
-        }
-        function initReveal() {
-            revealElements("reveal");
-            revealElements("revealin");
-            revealElements("revealkanan");
-            revealElements("revealkiri");
-            revealElements("revealatas");
-            revealElements("revealr")
-        }
-        window.addEventListener("scroll", initReveal);
-    </script>
     <style>
         .reveal,.revealin,.revealkanan,.revealkiri,.revealatas,.revealr {
             position: relative;
@@ -3265,17 +3109,6 @@ Kini kami menanti hari istimewa kami.								</div>
             }
         }
     </style>
-    <script>
-        const wdpAudio = document.body.contains(document.getElementById('song')) ? document.getElementById('song') : !1;
-        document.addEventListener("visibilitychange", event => {
-            if (document.visibilityState === "visible") {
-                wdpAudio && wdpAudio.play()
-            } else {
-                wdpAudio && wdpAudio.pause()
-            }
-        }
-        );
-    </script>
     <style>
         .acara img {
             width: 100%;
@@ -3352,27 +3185,14 @@ Kini kami menanti hari istimewa kami.								</div>
 
         });
     </script>
+
+    <script src="js/aos.js?v=2.3.1" defer></script>
     <style>
         .elementor-lightbox .elementor-lightbox-item {
             padding: 20px!important;
         }
     </style>
-    <script>
-        function reveal() {
-            var reveals = document.querySelectorAll(".ef");
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 100;
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active")
-                } else {
-                    reveals[i].classList.remove("active")
-                }
-            }
-        }
-        window.addEventListener("scroll", reveal);
-    </script>
+    
     <style>
         .ef {
             position: relative;
@@ -3809,6 +3629,7 @@ Kini kami menanti hari istimewa kami.								</div>
             cursor: pointer
         }
     </style>
+
     <script>
 document.addEventListener('DOMContentLoaded', function() {
     // ==========================================================
@@ -4137,5 +3958,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" defer></script>
+ <script src="js/main.js?v=1.0.0" defer></script>
 </body>
 </html>
