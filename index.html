@@ -3027,58 +3027,10 @@ Kini kami menanti hari istimewa kami.								</div>
    <script>
     document.addEventListener("DOMContentLoaded", function() {
         const toggleButton = document.getElementById("open");
-        const videoElement = document.querySelector(".elementor-background-video-container video");
-        const linkVideo = ".elementor-background-video-container video";
-        let iframeOrVideoLoaded = false;
-
-        if (toggleButton && videoElement) {
-            toggleButton.addEventListener("click", function() {
-                if (videoElement.paused) {
-                    videoElement.play();
-                }
-            });
-        }
-
-        const elHostedVideo = document.querySelector('.slideAwal .elementor-background-video-container video');
-        
-        // --- INI BAGIAN PENTINGNYA ---
-        if (elHostedVideo) { // Hanya jalankan kode jika elemen video ditemukan
-            if (linkVideo !== "no" && linkVideo !== "") {
-                const isYoutubeVideos = isYoutubeVideoLink(linkVideo);
-                setTimeout(() => {
-                    if (!iframeOrVideoLoaded && toggleButton) {
-                        toggleButton.classList.add("btnVisibleAfterLoad");
-                        console.log("Slow Network!!! Video Buffered, Force Button Visible After 15 Second");
-                    }
-                }, 15000);
-
-                if (isYoutubeVideos) {
-                    // Logika untuk video YouTube (jika ada)
-                } else {
-                    elHostedVideo.removeAttribute('autoplay');
-                    setTimeout(() => {
-                        if (toggleButton) {
-                           toggleButton.classList.add("btnVisibleAfterLoad");
-                        }
-                        iframeOrVideoLoaded = true;
-                        console.log("Video Loaded");
-                    }, 200);
-                }
-            }
-        } else {
-            // Jika elemen video .slideAwal tidak ada, langsung tampilkan tombol setelah sedikit delay
+        if (toggleButton) {
             setTimeout(() => {
-                if (toggleButton) {
-                    toggleButton.classList.add("btnVisibleAfterLoad");
-                }
-                console.log("No initial video found. Showing button.");
+                toggleButton.classList.add("btnVisibleAfterLoad");
             }, 200);
-        }
-
-        function isYoutubeVideoLink(url) {
-            var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
-            var match = url.match(regExp);
-            return (match && match[7].length == 11) ? match[7] : false;
         }
     });
 </script>
