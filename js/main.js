@@ -1,4 +1,5 @@
 // Combined internal scripts
+const BUILD_VERSION = '1.0.0';
 function lazyloadRunObserver(){const lazyloadBackgrounds=document.querySelectorAll('.e-con.e-parent:not(.e-lazyloaded)');const lazyloadBackgroundObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){const lazyloadBackground=entry.target;if(lazyloadBackground){lazyloadBackground.classList.add('e-lazyloaded');}lazyloadBackgroundObserver.unobserve(entry.target);}})},{rootMargin:'200px 0px 200px 0px'});lazyloadBackgrounds.forEach(lazyloadBackground=>{lazyloadBackgroundObserver.observe(lazyloadBackground);});}
 ['DOMContentLoaded','elementor/lazyload/observe'].forEach(event=>{document.addEventListener(event,lazyloadRunObserver);});
 function setDynamicVH(){let vh=window.innerHeight*0.01;document.documentElement.style.setProperty('--vh',`${vh}px`);}
@@ -8,6 +9,12 @@ function createObserver(selector,offset){const observer=new IntersectionObserver
 document.addEventListener('DOMContentLoaded',()=>{['.reveal','.revealin','.revealkanan','.revealkiri','.revealatas','.revealr'].forEach(cls=>createObserver(cls,150));createObserver('.ef',100);});
 const wdpAudio=document.getElementById('song');
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'){wdpAudio&&wdpAudio.play();}else{wdpAudio&&wdpAudio.pause();}});
+
+function reveal(){var reveals=document.querySelectorAll('.ef');for(var i=0;i<reveals.length;i++){var windowHeight=window.innerHeight;var elementTop=reveals[i].getBoundingClientRect().top;var elementVisible=100;if(elementTop<windowHeight-elementVisible){reveals[i].classList.add('active');}else{reveals[i].classList.remove('active');}}}
+window.addEventListener('scroll',reveal);
+function loadScript(src){return new Promise((resolve,reject)=>{const versionedSrc=`${src}?v=${BUILD_VERSION}`;if(document.querySelector(`script[src="${versionedSrc}"]`)){resolve();return;}const s=document.createElement('script');s.src=versionedSrc;s.onload=resolve;s.onerror=reject;document.body.appendChild(s);});}
+function loadCSS(href){return new Promise((resolve,reject)=>{const versionedHref=`${href}?v=${BUILD_VERSION}`;if(document.querySelector(`link[href="${versionedHref}"]`)){resolve();return;}const l=document.createElement('link');l.rel='stylesheet';l.href=versionedHref;l.onload=resolve;l.onerror=reject;document.head.appendChild(l);});}
+
 function loadScript(src){return new Promise((resolve,reject)=>{if(document.querySelector(`script[src="${src}"]`)){resolve();return;}const s=document.createElement('script');s.src=src;s.onload=resolve;s.onerror=reject;document.body.appendChild(s);});}
 function loadCSS(href){return new Promise((resolve,reject)=>{if(document.querySelector(`link[href="${href}"]`)){resolve();return;}const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.onload=resolve;l.onerror=reject;document.head.appendChild(l);});}
 const galleryLinks=document.querySelectorAll('[data-lightbox]');if(galleryLinks.length){const handler=async e=>{if(typeof lightbox==='undefined'){e.preventDefault();await Promise.all([loadCSS('https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css'),loadScript('https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js')]);e.currentTarget.click();}};galleryLinks.forEach(el=>el.addEventListener('click',handler,{once:true}));}
